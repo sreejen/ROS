@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="first" type="first.py" name="first_node" output="screen">
+  </node>
+</launch>

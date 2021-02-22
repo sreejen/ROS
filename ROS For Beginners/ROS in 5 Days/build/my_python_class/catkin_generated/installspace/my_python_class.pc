@@ -4,5 +4,5 @@ Name: my_python_class
 Description: Description of my_python_class
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user/catkin_ws/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

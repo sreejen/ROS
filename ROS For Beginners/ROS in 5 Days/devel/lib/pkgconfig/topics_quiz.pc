@@ -4,5 +4,5 @@ Name: topics_quiz
 Description: Description of topics_quiz
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/user/catkin_ws/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

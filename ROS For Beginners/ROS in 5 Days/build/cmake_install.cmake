@@ -126,15 +126,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/action_unit/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/bb8_custom/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/first/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/my_package/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/my_python_class/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/services_quiz/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/sub_ex/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/topics_quiz/cmake_install.cmake")
-  include("/home/user/catkin_ws/build/unit_4_services/cmake_install.cmake")
+  include("/home/user/catkin_ws/build/my_turtlebot_actions/cmake_install.cmake")
 
 endif()
 

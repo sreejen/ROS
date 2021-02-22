@@ -4,5 +4,5 @@ Name: bb8_custom
 Description: Description of bb8_custom
 Version: 0.0.0
 Cflags: -I/home/user/catkin_ws/devel/include
-Libs: -L/home/user/catkin_ws/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: rospy

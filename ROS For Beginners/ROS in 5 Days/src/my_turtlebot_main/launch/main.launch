@@ -1,0 +1,22 @@
+<launch>
+
+  <node pkg ="my_turtlebot_actions"
+        type="turtle_action_server.py"
+        name="turtle_action_server_node"
+        output="screen">
+  </node>
+  
+  <node pkg ="my_turtlebot_topics"
+        type="turtle_service_server.py"
+        name="turtle_service_server"
+        output="screen">
+  </node>
+
+  <node pkg ="my_turtlebot_main"
+        type="turtle_main.py"
+        name="turtle_main_node"
+        output="screen">
+  </node>
+
+
+</launch>

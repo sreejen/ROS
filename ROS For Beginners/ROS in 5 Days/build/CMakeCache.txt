@@ -34,7 +34,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=
+CATKIN_WHITELIST_PACKAGES:STRING=my_turtlebot_actions
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -188,10 +188,7 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a program.
-DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
-
-//Doxygen found
-DOXYGEN_FOUND:BOOL=TRUE
+DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
@@ -227,10 +224,10 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 NOSETESTS:FILEPATH=/usr/local/bin/nosetests-2.7
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
+PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
 //Specify specific Python version to use ('major.minor' or 'major')
-PYTHON_VERSION:STRING=2
+PYTHON_VERSION:STRING=
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=/home/user/catkin_ws/build
@@ -245,7 +242,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=ip-172-31-20-98
+SITE:STRING=18_xterm
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -276,6 +273,12 @@ actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
+
+//Value Computed by CMake
+actions_quiz_BINARY_DIR:STATIC=/home/user/catkin_ws/build/actions_quiz
+
+//Value Computed by CMake
+actions_quiz_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/actions_quiz
 
 //Value Computed by CMake
 bb8_custom_BINARY_DIR:STATIC=/home/user/catkin_ws/build/bb8_custom
@@ -357,22 +360,22 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //The directory containing a CMake configuration file for iri_wam_reproduce_trajectory.
-iri_wam_reproduce_trajectory_DIR:PATH=/home/simulations/public_sim_ws/devel/share/iri_wam_reproduce_trajectory/cmake
+iri_wam_reproduce_trajectory_DIR:PATH=iri_wam_reproduce_trajectory_DIR-NOTFOUND
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/librostime.so
+
+//Value Computed by CMake
+logger_example_pkg_BINARY_DIR:STATIC=/home/user/catkin_ws/build/logger_example_pkg
+
+//Value Computed by CMake
+logger_example_pkg_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/logger_example_pkg
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
-
-//Value Computed by CMake
-move_bb8_pkg_BINARY_DIR:STATIC=/home/user/catkin_ws/build/linux_course_files/move_bb8_pkg
-
-//Value Computed by CMake
-move_bb8_pkg_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/linux_course_files/move_bb8_pkg
 
 //Value Computed by CMake
 my_package_BINARY_DIR:STATIC=/home/user/catkin_ws/build/my_package
@@ -385,6 +388,27 @@ my_python_class_BINARY_DIR:STATIC=/home/user/catkin_ws/build/my_python_class
 
 //Value Computed by CMake
 my_python_class_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/my_python_class
+
+//Value Computed by CMake
+my_sphero_actions_BINARY_DIR:STATIC=/home/user/catkin_ws/build/my_sphero_actions
+
+//Value Computed by CMake
+my_sphero_actions_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/my_sphero_actions
+
+//Value Computed by CMake
+my_sphero_topics_BINARY_DIR:STATIC=/home/user/catkin_ws/build/my_sphero_topics
+
+//Value Computed by CMake
+my_sphero_topics_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/my_sphero_topics
+
+//Value Computed by CMake
+my_turtlebot_actions_BINARY_DIR:STATIC=/home/user/catkin_ws/build/my_turtlebot_actions
+
+//Value Computed by CMake
+my_turtlebot_actions_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/my_turtlebot_actions
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
@@ -408,6 +432,12 @@ rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //Value Computed by CMake
+rqttestgra_BINARY_DIR:STATIC=/home/user/catkin_ws/build/rqttestgra
+
+//Value Computed by CMake
+rqttestgra_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/rqttestgra
+
+//Value Computed by CMake
 services_quiz_BINARY_DIR:STATIC=/home/user/catkin_ws/build/services_quiz
 
 //Value Computed by CMake
@@ -427,9 +457,6 @@ topics_quiz_BINARY_DIR:STATIC=/home/user/catkin_ws/build/topics_quiz
 
 //Value Computed by CMake
 topics_quiz_SOURCE_DIR:STATIC=/home/user/catkin_ws/src/topics_quiz
-
-//The directory containing a CMake configuration file for trajectory_msgs.
-trajectory_msgs_DIR:PATH=/opt/ros/kinetic/share/trajectory_msgs/cmake
 
 //Value Computed by CMake
 unit_4_services_BINARY_DIR:STATIC=/home/user/catkin_ws/build/unit_4_services
@@ -542,7 +569,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -582,7 +609,7 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.12()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
